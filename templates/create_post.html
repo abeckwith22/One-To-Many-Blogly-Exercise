@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogly - Create New Post</title>
+</head>
+<body>
+    <form action="/users/{{user.id}}/posts/new" method="POST">
+        <p><b>Title</b></p>
+        <input type="text" name="title" placeholder="Title">
+        <p><b>Content</b></p>
+        <input type="text" name="content" placeholder="Content">
+        <button>Submit New Post</button>
+    </form>
+    <br>
+    <form action="/">
+        <button>Go back</button>
+    </form>
+</body>
+</html>
